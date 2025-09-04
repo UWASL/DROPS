@@ -1,0 +1,60 @@
+{
+  "rootPath" : "../",
+  "tracesFolder": "traces/",
+  "inputFolder": "traces/",
+  "resultsFolder": "experiments/test-exp/",
+  "experiments": [
+    {
+      "trainingTraceName": ["trace_eastus.20241101-1.csv"],
+      "testingTraceName": ["trace_eastus.20241101-1.csv"],
+      "lifeCycleTraceName": "lifecycles_eastus.20241101-1.csv",
+      "vmCreationCdfPath": "vm_creation_latency.csv",
+      "percentiles": [1.0],
+      "containerOptimizationMethod": "DROPS",
+      "isAggressiveContainerCreation": false
+    },
+    {
+      "trainingTraceName": "trace_eastus.20241101-1.csv",
+      "testingTraceName": "trace_eastus.20241101-1.csv",
+      "lifeCycleTraceName": "lifecycles_eastus.20241101-1.csv",
+      "vmCreationCdfPath": "vm_creation_latency.csv",
+      "percentiles": [1.0],
+      "containerOptimizationMethod": "Production",
+      "vmExpandThreshold": 0.4,
+      "vmShrinkThreshold": 0.1,
+      "vmTargetThreshold": 0.2
+    },
+    {
+      "trainingTraceName": "trace_eastus.20241101-1.csv",
+      "testingTraceName": "trace_eastus.20241101-1.csv",
+      "lifeCycleTraceName": "lifecycles_eastus.20241101-1.csv",
+      "vmCreationCdfPath": "vm_creation_latency.csv",
+      "percentiles": [1.0],
+      "containerOptimizationMethod": "Reactive",
+      "scaleUpFactor": 1.35,
+      "scaleDownFactor": 1
+    },
+    {
+      "trainingTraceName": "trace_eastus.20241101-1.csv",
+      "testingTraceName": "trace_eastus.20241101-1.csv",
+      "lifeCycleTraceName": "lifecycles_eastus.20241101-1.csv",
+      "vmCreationCdfPath": "vm_creation_latency.csv",
+      "percentiles": [1.0],
+      "containerOptimizationMethod": "PredictiveReactive",
+      "predictionInterval": 3600,
+      "predictionFile": "predicited_trace.csv"
+
+    },
+    {
+      "trainingTraceName": "trace_eastus.20241101-1.csv",
+      "testingTraceName": "trace_eastus.20241101-1.csv",
+      "lifeCycleTraceName": "lifecycles_eastus.20241101-1.csv",
+      "vmCreationCdfPath": "vm_creation_latency.csv",
+      "percentiles": [1.0],
+      "containerOptimizationMethod": "PredictionConcentratedLoad",
+      "predictionInterval": 3600,
+      "predictionFile": "predicited_trace.csv"
+    }
+  ]
+}
+

@@ -1,0 +1,59 @@
+{
+  "rootPath" : "../",
+  "tracesFolder": "traces/",
+  "inputFolder": "traces/",
+  "resultsFolder": "experiments/fig6/",
+  "experiments": [
+    {
+      "trainingTraceName": ["1_week_0_day.csv","1_week_1_day.csv","1_week_2_day.csv","1_week_3_day.csv","1_week_4_day.csv","1_week_5_day.csv","1_week_6_day.csv"],
+      "testingTraceName": ["1_day_0_day_offset.csv","1_day_1_day_offset.csv","1_day_2_day_offset.csv","1_day_3_day_offset.csv","1_day_4_day_offset.csv","1_day_5_day_offset.csv","1_day_6_day_offset.csv"],
+      "lifeCycleTraceName": "lifecycles_eastus.20241101-14.csv",
+      "vmCreationCdfPath": "vm_creation_latency.csv",
+      "percentiles": [1.0],
+      "containerOptimizationMethod": "DROPS",
+      "isAggressiveContainerCreation": false
+    },
+    {
+      "trainingTraceName": "trace_eastus.20241101-7.csv",
+      "testingTraceName": "trace_eastus.20241107-14.csv",
+      "lifeCycleTraceName": "lifecycles_eastus.20241101-14.csv",
+      "vmCreationCdfPath": "vm_creation_latency.csv",
+      "percentiles": [1.0],
+      "containerOptimizationMethod": "Production",
+      "vmExpandThreshold": 0.4,
+      "vmShrinkThreshold": 0.1,
+      "vmTargetThreshold": 0.2
+    },
+    {
+      "trainingTraceName": "trace_eastus.20241101-7.csv",
+      "testingTraceName": "trace_eastus.20241107-14.csv",
+      "lifeCycleTraceName": "lifecycles_eastus.20241101-14.csv",
+      "vmCreationCdfPath": "vm_creation_latency.csv",
+      "percentiles": [1.0],
+      "containerOptimizationMethod": "Reactive",
+      "scaleUpFactor": 1.35,
+      "scaleDownFactor": 1
+    },
+    {
+      "trainingTraceName": "trace_eastus.20241101-7.csv",
+      "testingTraceName": "trace_eastus.20241107-14.csv",
+      "lifeCycleTraceName": "lifecycles_eastus.20241101-14.csv",
+      "vmCreationCdfPath": "vm_creation_latency.csv",
+      "percentiles": [1.0],
+      "containerOptimizationMethod": "PredictiveReactive",
+      "predictionInterval": 3600,
+      "predictionFile": "predicited_trace.csv"
+
+    },
+    {
+      "trainingTraceName": "trace_eastus.20241101-7.csv",
+      "testingTraceName": "trace_eastus.20241107-14.csv",
+      "lifeCycleTraceName": "lifecycles_eastus.20241101-14.csv",
+      "vmCreationCdfPath": "vm_creation_latency.csv",
+      "percentiles": [1.0],
+      "containerOptimizationMethod": "PredictionConcentratedLoad",
+      "predictionInterval": 3600,
+      "predictionFile": "predicited_trace.csv"
+    }
+  ]
+}

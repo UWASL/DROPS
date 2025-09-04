@@ -1,0 +1,58 @@
+{
+  "rootPath" : "../",
+  "tracesFolder": "traces/",
+  "inputFolder": "traces/",
+  "resultsFolder": "experiments/fig10a/",
+  "experiments": [
+    {
+      "trainingTraceName": "trace_eastus.20241101-7.csv",
+      "testingTraceName": "trace_eastus.20241107-14.csv",
+      "lifeCycleTraceName": "lifecycles_eastus.20241101-14.csv",
+      "vmCreationCdfPath": "vm_creation_latency.csv",
+      "percentiles": [1.0],
+      "containerOptimizationMethod": "Reactive",
+      "scaleUpFactor": 2.5,
+      "scaleDownFactor": 1
+    },
+    {
+      "trainingTraceName": "trace_eastus.20241101-7.csv",
+      "testingTraceName": "trace_eastus.20241107-14.csv",
+      "lifeCycleTraceName": "lifecycles_eastus.20241101-14.csv",
+      "vmCreationCdfPath": "vm_creation_latency.csv",
+      "percentiles": [1.0],
+      "containerOptimizationMethod": "Reactive",
+      "scaleUpFactor": 2.0,
+      "scaleDownFactor": 1
+    },
+    {
+      "trainingTraceName": "trace_eastus.20241101-7.csv",
+      "testingTraceName": "trace_eastus.20241107-14.csv",
+      "lifeCycleTraceName": "lifecycles_eastus.20241101-14.csv",
+      "vmCreationCdfPath": "vm_creation_latency.csv",
+      "percentiles": [1.0],
+      "containerOptimizationMethod": "Reactive",
+      "scaleUpFactor": 1.75,
+      "scaleDownFactor": 1
+    },
+    {
+      "trainingTraceName": "trace_eastus.20241101-7.csv",
+      "testingTraceName": "trace_eastus.20241107-14.csv",
+      "lifeCycleTraceName": "lifecycles_eastus.20241101-14.csv",
+      "vmCreationCdfPath": "vm_creation_latency.csv",
+      "percentiles": [1.0],
+      "containerOptimizationMethod": "Reactive",
+      "scaleUpFactor": 1.5,
+      "scaleDownFactor": 1
+    },
+    {
+      "trainingTraceName": "trace_eastus.20241101-7.csv",
+      "testingTraceName": "trace_eastus.20241107-14.csv",
+      "lifeCycleTraceName": "lifecycles_eastus.20241101-14.csv",
+      "vmCreationCdfPath": "vm_creation_latency.csv",
+      "percentiles": [1.0],
+      "containerOptimizationMethod": "Reactive",
+      "scaleUpFactor": 1.25,
+      "scaleDownFactor": 1
+    }
+  ]
+}

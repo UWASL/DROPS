@@ -1,0 +1,123 @@
+{
+  "rootPath" : "../",
+  "tracesFolder": "traces/",
+  "inputFolder": "traces/",
+  "resultsFolder": "experiments/fig7/",
+  "experiments": [
+    {
+      "trainingTraceName": "trace_eastus.20241101-7.csv",
+      "testingTraceName": "trace_eastus.20241107-14.csv",
+      "lifeCycleTraceName": "lifecycles_eastus.20241101-14.csv",
+      "vmCreationCdfPath": "vm_creation_latency.csv",
+      "percentiles": [1.0],
+      "containerOptimizationMethod": "PredictionPoissonLoad",
+      "predictionInterval": 10
+    },
+    {
+      "trainingTraceName": "trace_eastus.20241101-7.csv",
+      "testingTraceName": "trace_eastus.20241107-14.csv",
+      "lifeCycleTraceName": "lifecycles_eastus.20241101-14.csv",
+      "vmCreationCdfPath": "vm_creation_latency.csv",
+      "percentiles": [1.0],
+      "containerOptimizationMethod": "PredictionPoissonLoad",
+      "predictionInterval": 60
+    },
+    {
+      "trainingTraceName": "trace_eastus.20241101-7.csv",
+      "testingTraceName": "trace_eastus.20241107-14.csv",
+      "lifeCycleTraceName": "lifecycles_eastus.20241101-14.csv",
+      "vmCreationCdfPath": "vm_creation_latency.csv",
+      "percentiles": [1.0],
+      "containerOptimizationMethod": "PredictionPoissonLoad",
+      "predictionInterval": 600
+    },
+    
+    {
+      "trainingTraceName": "trace_eastus.20241101-7.csv",
+      "testingTraceName": "trace_eastus.20241107-14.csv",
+      "lifeCycleTraceName": "lifecycles_eastus.20241101-14.csv",
+      "vmCreationCdfPath": "vm_creation_latency.csv",
+      "percentiles": [1.0],
+      "containerOptimizationMethod": "PredictionPoissonLoad",
+      "predictionInterval": 3600
+    },
+    
+
+    {
+      "trainingTraceName": "trace_eastus.20241101-7.csv",
+      "testingTraceName": "trace_eastus.20241107-14.csv",
+      "lifeCycleTraceName": "lifecycles_eastus.20241101-14.csv",
+      "vmCreationCdfPath": "vm_creation_latency.csv",
+      "percentiles": [1.0],
+      "containerOptimizationMethod": "PredictionConstantLoad",
+      "predictionInterval": 10
+    },
+    {
+      "trainingTraceName": "trace_eastus.20241101-7.csv",
+      "testingTraceName": "trace_eastus.20241107-14.csv",
+      "lifeCycleTraceName": "lifecycles_eastus.20241101-14.csv",
+      "vmCreationCdfPath": "vm_creation_latency.csv",
+      "percentiles": [1.0],
+      "containerOptimizationMethod": "PredictionConstantLoad",
+      "predictionInterval": 60
+    },
+    {
+      "trainingTraceName": "trace_eastus.20241101-7.csv",
+      "testingTraceName": "trace_eastus.20241107-14.csv",
+      "lifeCycleTraceName": "lifecycles_eastus.20241101-14.csv",
+      "vmCreationCdfPath": "vm_creation_latency.csv",
+      "percentiles": [1.0],
+      "containerOptimizationMethod": "PredictionConstantLoad",
+      "predictionInterval": 600
+    },
+    
+    {
+      "trainingTraceName": "trace_eastus.20241101-7.csv",
+      "testingTraceName": "trace_eastus.20241107-14.csv",
+      "lifeCycleTraceName": "lifecycles_eastus.20241101-14.csv",
+      "vmCreationCdfPath": "vm_creation_latency.csv",
+      "percentiles": [1.0],
+      "containerOptimizationMethod": "PredictionConstantLoad",
+      "predictionInterval": 3600
+    },
+    
+
+    {
+      "trainingTraceName": "trace_eastus.20241101-7.csv",
+      "testingTraceName": "trace_eastus.20241107-14.csv",
+      "lifeCycleTraceName": "lifecycles_eastus.20241101-14.csv",
+      "vmCreationCdfPath": "vm_creation_latency.csv",
+      "percentiles": [1.0],
+      "containerOptimizationMethod": "PredictionConcentratedLoad",
+      "predictionInterval": 10
+    },
+    {
+      "trainingTraceName": "trace_eastus.20241101-7.csv",
+      "testingTraceName": "trace_eastus.20241107-14.csv",
+      "lifeCycleTraceName": "lifecycles_eastus.20241101-14.csv",
+      "vmCreationCdfPath": "vm_creation_latency.csv",
+      "percentiles": [1.0],
+      "containerOptimizationMethod": "PredictionConcentratedLoad",
+      "predictionInterval": 60
+    },
+    {
+      "trainingTraceName": "trace_eastus.20241101-7.csv",
+      "testingTraceName": "trace_eastus.20241107-14.csv",
+      "lifeCycleTraceName": "lifecycles_eastus.20241101-14.csv",
+      "vmCreationCdfPath": "vm_creation_latency.csv",
+      "percentiles": [1.0],
+      "containerOptimizationMethod": "PredictionConcentratedLoad",
+      "predictionInterval": 600
+    },
+    
+    {
+      "trainingTraceName": "trace_eastus.20241101-7.csv",
+      "testingTraceName": "trace_eastus.20241107-14.csv",
+      "lifeCycleTraceName": "lifecycles_eastus.20241101-14.csv",
+      "vmCreationCdfPath": "vm_creation_latency.csv",
+      "percentiles": [1.0],
+      "containerOptimizationMethod": "PredictionConcentratedLoad",
+      "predictionInterval": 3600
+    }
+  ]
+}
